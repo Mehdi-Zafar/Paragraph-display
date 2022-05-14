@@ -1,0 +1,36 @@
+const paragraphs = ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus suscipit velit, at finibus ante vestibulum ut. Etiam faucibus eros vel augue ornare tincidunt. Praesent quis augue dolor. Curabitur non nisl eleifend, varius est sed, faucibus sapien. Suspendisse ac est enim. Aliquam erat volutpat. Ut et nibh quis leo venenatis faucibus. Nullam dictum ipsum sed consequat ultrices. Nam et ante libero. Aenean arcu ante, scelerisque quis leo ut, lobortis semper mi. Morbi a consectetur ante. Proin pellentesque ipsum non lectus vehicula, eu accumsan dolor hendrerit.",
+"Donec bibendum nunc ut arcu semper, eget bibendum tellus rhoncus. Morbi eu lectus est. Cras sed diam at elit porta viverra. In suscipit elit id nisi rutrum, at fermentum ipsum porta. In dictum finibus velit vitae dapibus. Vestibulum viverra rutrum ipsum, in tristique eros finibus ac. Integer facilisis orci ut nisi dictum, at volutpat augue luctus. Quisque convallis, nulla sit amet sollicitudin blandit, magna dolor maximus est, eu egestas mauris purus mattis purus. Quisque condimentum magna arcu, eu porttitor odio bibendum non. Praesent risus metus, interdum eget hendrerit eu, commodo vel nulla. Praesent aliquet, tellus at mollis porta, purus lacus ullamcorper dui, et feugiat nisi erat rhoncus eros. Donec rhoncus rutrum neque, sed ornare est. Proin imperdiet lacus et eros consequat semper. Suspendisse potenti.",
+"Aenean gravida nec quam non suscipit. Etiam eget erat eros. Donec quis hendrerit mi, nec posuere enim. In eleifend ultricies nunc quis pulvinar. Donec eget risus eget est dictum laoreet. Etiam eget diam nibh. Duis at tellus nulla. Aliquam sed nunc in tortor sodales gravida. Vivamus sed diam risus.",
+"Phasellus varius tincidunt libero eget porttitor. Vestibulum molestie et diam ut dignissim. In feugiat eu nisi suscipit pharetra. Fusce ut augue eget odio lacinia mattis. Proin gravida ligula felis, sit amet pulvinar lacus vehicula in. Mauris vitae lacus congue, rutrum risus non, consequat arcu. Quisque vehicula gravida fringilla. Sed mattis condimentum est, eget iaculis quam imperdiet at. Sed aliquam euismod felis a consectetur. Sed ante velit, faucibus id nibh vel, rhoncus tempor nibh. Ut quis dolor quis augue blandit tincidunt. Etiam nisl ipsum, consectetur at maximus tempus, dignissim in mauris. Integer et fringilla quam.",
+"Vestibulum porttitor metus vel urna accumsan, et sollicitudin velit porttitor. Integer eu venenatis turpis. Vestibulum dolor lacus, vehicula non risus eget, dapibus iaculis sapien. Nunc eleifend, enim et vestibulum tempus, nulla nisl porta ipsum, eget blandit elit dolor vitae turpis. Phasellus molestie porttitor venenatis. Phasellus vitae maximus metus. Nunc quis metus lectus. Donec laoreet faucibus nisl vitae rutrum. Nam sed faucibus velit. Integer et ligula porta, scelerisque lorem a, eleifend mi. Aliquam consectetur, neque a aliquet tincidunt, diam massa ullamcorper magna, non egestas lacus diam vitae nisl. Suspendisse in convallis nisl, vitae tempus eros. Nullam quis molestie magna.",
+"Proin nec mauris a metus aliquet lacinia. Nam ex ipsum, ornare ac interdum non, commodo sit amet justo. Pellentesque et sodales sapien. Sed ut orci vitae nisi luctus elementum. Fusce blandit ante et mauris finibus, aliquam elementum leo rhoncus. Duis ullamcorper suscipit sem nec bibendum. Praesent et nisl pretium, mattis mauris in, sodales justo. Suspendisse suscipit libero lectus, ullamcorper rutrum diam lobortis sit amet. Curabitur turpis libero, finibus vitae justo vitae, congue hendrerit justo. Praesent finibus vitae arcu ut consequat. Morbi facilisis leo risus, sed rutrum est euismod id. Cras lacinia in ex quis blandit.",
+"Donec fermentum diam eu tempus posuere. Curabitur velit odio, consectetur vitae sapien vitae, suscipit mollis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vitae est urna. Nulla non orci in arcu finibus egestas. Suspendisse bibendum ipsum neque, at facilisis velit cursus sollicitudin. In vehicula lobortis ipsum, non venenatis turpis lobortis ac. Pellentesque blandit velit sem, et mattis libero gravida in. Fusce tempor id libero ut accumsan. Phasellus eu massa placerat erat sollicitudin imperdiet id ut orci. Nam congue magna quis tellus tristique euismod. Donec nec venenatis lacus. Nullam sodales enim consequat massa lobortis luctus. Donec rutrum augue id luctus efficitur. Duis non sem eros. Fusce finibus id justo eu interdum."];
+
+const randomNumber = Math.floor(Math.random() * paragraphs.length);
+const form = document.querySelector("form");
+const article = document.getElementById("paragraph");
+const number = document.getElementById("number");
+const ul = document.createElement("ul");
+
+
+if(number.value>=1 && number.value<=10){ }
+form.addEventListener("submit",function(e){
+    e.preventDefault();
+    if(number.value>=1 && number.value<=10){ 
+        for (let index = 0; index < number.value; index++) {
+            const li = document.createElement("li");
+            const element = paragraphs[index];
+            li.innerHTML = element;
+            ul.append(li);
+            li.style.marginBlock = "10px";
+        }
+        article.innerHTML = ul.innerHTML;
+        article.style.boxShadow=  "0 2px 5px black";
+        ul.innerHTML = " ";
+    }else{
+        alert("Enter number in range!");
+    }
+})
